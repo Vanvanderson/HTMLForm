@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="results.html" method="GET">
+        <div>
+            <label>
+                First Name:
+                <input type="text" name="firstname" id="firstname">
+            </label>
+        </div>
+        <div>
+            <label>
+                Last Name:
+                <input type="text" name="lastname" id="lastname">
+            </label>
+        </div>
+        <div>
+            <label>
+                Age
+                <input type="number" name="age" id="age" min="18" max="130" step="2" placeholder="Enter Age" required>
+            </label>
+        </div>
+        <div>
+            <label>
+                Birthday
+                <input type="date" name="date" id="date">
+            </label>
+        </div>
+        <div>
+            <label for="phoneNumber">Phone</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber">
+        </div>
+        <div>
+            Favorite Season:
+        </div>
+        <div>
+            <label>
+                Winter
+                <input type="checkbox" name="Winter" id="Winter">
+            </label>
+        </div>
+        <div>
+            <label>
+                Summer
+                <input type="checkbox" name="Summer" id="Winter">
+            </label>
+        </div>
+        <div>
+            <label>
+                User Name
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </label>
+        </div>
+        <div>
+            Do you prefer Nighttime or Daytime
+            <label>
+                Night
+                <input type="radio" name="night" id="night">
+            </label>
+            <label>
+                Day
+                <input type="radio" name="day" id="day">
+            </label>
+        </div>
+        <div>
+            <label for="faveDay">Favorite Weekday</label>
+            <select name="faveDay" id="faveDay" multiple>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday" selected>Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                Password
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </label>
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="webUrl" id="webUrl">
+        </div>
+        <div>
+            <label for="favecolor">Favorite Color</label>
+            <input type="color" name="favecolor" id="favecolor">
+        </div>
+            <input type="hidden" name="sessionId" id="sessionId"
+            value="secretRandomNumberUsedtoManageTheSession">
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
